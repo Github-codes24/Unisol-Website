@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Ignite</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <script src="https://kit.fontawesome.com/df4fa444c6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .link-section a {
+                font-size: 1.1rem;
+                padding: 0.75rem 1.5rem;
+                border-radius: 0.5rem;
+                text-decoration: none;
+            }
+
+            .qr-code img {
+                max-width: 200px; /* Ensure the QR code doesn't get too large */
+                width: 100%; /* Make it responsive */
+                height: auto;
+            }
+
+            h4 {
+                font-weight: bold;
+                color: #333;
+            }
+
+            @media (max-width: 767.98px) {
+                .text-md-start {
+                    text-align: center !important;
+                }
+                
+                .text-md-end {
+                    text-align: center !important;
+                }
+            }
+            .logo-large{
+                width: 285px;
+                height: 65px;
+                transition: width 0.3s ease-in-out;
+            }
+            .logo-small{
+                width: 100%;
+                height: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #91DDCF;">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex">
+                        <a href="#" class="text-dark me-4"><i class="fas fa-envelope text-secondary me-2"></i>service@unisol.org.in</a>
+                        <a href="tel:+919325312125" class="text-dark me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+91 932 531 2125</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#" class="text-dark me-2"> Help</a><small> / </small>
+                        <a href="#" class="text-dark mx-2"> Support</a><small> / </small>
+                        <a href="#" class="text-dark ms-2"> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <div class="container-fluid nav-bar p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3 py-2">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="public/img/logo/ignite.png" id="logo" class="img-fluid logo-large me-2" alt="UniSol Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active text-dark">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle text-dark">HealthCare</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="medical-equip.html" class="dropdown-item">Medical Equipment</a>
+                                <a href="screening.html" class="dropdown-item">Screening Devices</a>
+                                <a href="infrastructure.html" class="dropdown-item">Hospital Infrastructure</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle text-dark">Waste Management</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="waste-manag.html" class="dropdown-item">Solid Waste Management</a>
+                                <a href="biomedical.html" class="dropdown-item">Biomedical Waste Management</a>
+                                <a href="stp.html" class="dropdown-item">Sewage Treatment Plant</a>
+                                <a href="etp.html" class="dropdown-item">Effluent Treatment Plant</a>
+                                <a href="waste-water-manage.html" class="dropdown-item">Kitchen Waste Management</a>
+                                <a href="clean-safe.html" class="dropdown-item">Clean Safe Water</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle text-dark">Start-Up Projects</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="start-up.html" class="dropdown-item">Start-Up Health Group Projects</a>
+                                <a href="drone.html" class="dropdown-item">Agricultural Drone</a>
+                                <a href="pallets.html" class="dropdown-item">Automation in Pharmacy</a>
+                            </div>
+                        </div>
+                        <a href="inspiration.html" class="nav-item nav-link text-dark">Our Inspiration</a>
+                        <a href="contact.html" class="nav-item nav-link text-dark">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <script>
+            window.onscroll = function() {
+                var logo = document.getElementById("logo");
+                if (window.scrollY > 40) {
+                    logo.classList.add("logo-small");
+                } else {
+                    logo.classList.remove("logo-small");
+                }
+            };
+        </script>
+
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="appointmentModalLabel">Request Appointment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="appointmentForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb breadcrumb-drone">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Drone</h1>
+                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-secondary">Drone</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+         
+
+        <!-- drone -->
+        <!-- <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="col">
+                    <div class="row wow fadeInUp" data-wow-delay="0.1">
+                        <div class="bg-light rounded p-3">
+                            <img src="public/enviro/agri-1.jpg" class="img-fluid w-100 rounded" style="margin-bottom: 15px;" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- drone -->
+
+        <div class="container-fluid overflow-hidden pb-5" style="background: #f7f7f7;">
+            <div class="container py-5">
+                <!-- Section Title -->
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">Highlights</h5>
+                    </div>
+                </div>
+        
+                <!-- Highlight Content Start -->
+                <div class="row g-5 align-items-center">
+                    <!-- Left Column: Highlight Details -->
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <h5 class="fw-bold text-dark mb-4">
+                            Keeping doctors and nurses safe while providing effective teleconsultation
+                        </h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent border-0 d-flex align-items-start mb-2">
+                                <span class="fw-bold text-primary">More than 2 lacs farmers reached</span>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 d-flex align-items-start mb-2">
+                                <span class="fw-bold text-primary">More than 15,000+ deliveries</span>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 d-flex align-items-start mb-2">
+                                <span class="fw-bold text-primary">More than 700+ drone flying hours</span>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 d-flex align-items-start mb-2">
+                                <span class="fw-bold text-primary">More than 700+ pilots trained</span>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 d-flex align-items-start mb-2">
+                                <span class="fw-bold text-primary">More than 150+ employees</span>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!-- Right Column: Image Section -->
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="position-relative">
+                            <img src="public/enviro/agri-2.png" class="img-fluid w-100 rounded shadow-sm highlight-img" alt="Dozee Image">
+                        </div>
+                    </div>
+                </div>
+                <!-- Highlight Content End -->
+            </div>
+        </div>
+        <!-- Highlight End -->
+
+
+
+        <!-- Introduction Section Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <!-- Section Title -->
+                <h5 class="text-primary text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Current Spray Practice</h5>
+
+                <!-- Image Gallery Start -->
+                <div class="row g-4">
+                    <!-- Image Card 1 -->
+                    <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="bg-white rounded shadow-sm p-3 h-100">
+                            <img src="public/enviro/a-1.png" class="img-fluid w-100 rounded mb-3 gallery-img" alt="Smart Imaging">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent border-0 text-dark">LABORIOUS</li>
+                                <li class="list-group-item bg-transparent border-0 text-dark">TIME CONSUMING</li>
+                                <li class="list-group-item bg-transparent border-0 text-dark">LESS EFFICIENT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Image Card 2 -->
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="bg-white rounded shadow-sm p-3 h-100">
+                            <img src="public/enviro/a-2.png" class="img-fluid w-100 rounded mb-3 gallery-img" alt="Smart Visualization">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent border-0 text-dark">OPERATOR EXPOSURE (Many operators die and many get poisoned)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Image Card 3 -->
+                    <div class="col-md-4 wow fadeInRight" data-wow-delay="0.5s">
+                        <div class="bg-white rounded shadow-sm p-3 h-100">
+                            <img src="public/enviro/a-3.png" class="img-fluid w-100 rounded mb-3 gallery-img" alt="Smart Surgical System">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent border-0 text-dark">REQUIRES LOT OF WATER - Conventional spray needs min.150L of good water per acre. This is difficult to arrange in fields.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image Gallery End -->
+
+                <!-- Features List Start -->
+                <div class="row g-5 mt-5">
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent border-0">
+                                <i class="fa-solid fa-check-circle text-success me-2"></i>
+                                SMALL LAND HOLDING – DIFFICULT TO USE BIG EQUIPMENTS
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <i class="fa-solid fa-check-circle text-success me-2"></i>
+                                INDIA HAS VARIABLE, COMPLEX TERRAIN
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <i class="fa-solid fa-check-circle text-success me-2"></i>
+                                NO SCIENTIFIC AND CONTROLLED TECHNOLOGY FOR SPRAYING APPLICATION
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Features List End -->
+            </div>
+        </div>
+        <!-- Introduction Section End -->
+
+        <!-- drone -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">Drone vs Traditional Spray</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row wow fadeInUp" data-wow-delay="0.1">
+                        <div class="bg-light rounded p-3">
+                            <img src="public/enviro/a-4.png" class="img-fluid w-100 rounded" style="margin-bottom: 15px;" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- drone -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid overflow-hidden pb-5" style="background: #f7f7f7;">
+            <div class="container py-5">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">Drone vs Traditional Spray</h5>
+                    </div>
+                </div>
+                <!-- Testimonial Content Start -->
+                <div class="row g-5">
+                    <!-- Left Column -->
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <h5 class="fw-bold text-dark mb-4">Keeping doctors and nurses safe while providing effective teleconsultation</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent border-0 d-flex align-items-start">
+                                <div>
+                                    <span class="fw-bold">Difficulty faced in spraying PPC on Tall crops like Sugarcane, Wetland crops like Paddy.</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 d-flex align-items-start">
+                                <div>
+                                    <span class="fw-bold">Difficulty faced in crops on which there are regular sprays required like Chilli, other vegetables & Fruits.</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 d-flex align-items-start">
+                                <div>
+                                    <span class="fw-bold">Labour Shortage:- Farmers can take service or can spray them self also.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="position-relative">
+                            <img src="public/enviro/a-5.png" class="img-fluid w-100 rounded shadow-sm" alt="Dozee Image">
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial Content End -->
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Agri Product Range Agribot MX Section Start -->
+        <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+            <div class="container py-5">
+                <!-- Section Title -->
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">Agri Product Range Agribot MX</h5>
+                    </div>
+                </div>
+
+                <!-- Table Start -->
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-striped align-middle">
+                        <thead class="table-primary">
+                            <tr>
+                                <th class="text-center" style="width: 50%;">Feature</th>
+                                <th class="text-center" style="width: 50%;">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-check-circle text-success me-2"></i>DGCA Approved</td>
+                                <td class="text-center">Yes</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-drone text-info me-2"></i>Drone Category</td>
+                                <td class="text-center">Medium</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-wrench text-warning me-2"></i>Hexacopter Structure</td>
+                                <td class="text-center">Yes</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-ruler-combined text-secondary me-2"></i>Folded Size (L x B x H)</td>
+                                <td class="text-center">611mm x 611mm x 580mm</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-arrow-up text-primary me-2"></i>Maximum Height</td>
+                                <td class="text-center">30 Meters</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-battery-full text-danger me-2"></i>Lithium Ion Battery (Life: 500 Cycles)</td>
+                                <td class="text-center">Yes</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-bolt text-warning me-2"></i>Battery Capacity</td>
+                                <td class="text-center">25200mAh</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-leaf text-success me-2"></i>Acres per Battery Charge</td>
+                                <td class="text-center">3</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-tachometer-alt text-primary me-2"></i>Dashboard – Online</td>
+                                <td class="text-center">Yes</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-signal text-info me-2"></i>4G Connectivity</td>
+                                <td class="text-center">Yes</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-video text-dark me-2"></i>Live Data Transmission with Video</td>
+                                <td class="text-center">Yes</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-exclamation-triangle text-danger me-2"></i>Obstacle Detection & Collision Avoidance</td>
+                                <td class="text-center">Yes</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-motorcycle text-warning me-2"></i>Bike Back Carriage</td>
+                                <td class="text-center">No</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-backpack text-info me-2"></i>BackPack</td>
+                                <td class="text-center">Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Table End -->
+            </div>
+        </div>
+        <!-- Agri Product Range Agribot MX Section End -->
+
+
+
+        <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+            <div class="container py-5">
+                <h2 class="text-center mb-5">Advanced Features</h2>
+                <div class="row text-center">
+                    <div class="col-md-3 w-25">
+                        <div class="feature-box">
+                            <div class="feature-box-content">
+                                <h4>Quick Spray</h4>
+                                <p>1 acre spray in just 7 minutes<br>(25-30 acres spray in a day)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 w-25">
+                        <div class="feature-box">
+                            <div class="feature-box-content">
+                                <h4>Limited water usage</h4>
+                                <p>Only 8-10 litres of water required in 1 acre</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 w-25">
+                        <div class="feature-box">
+                            <div class="feature-box-content">
+                                <h4>2 in 1 Agri drone</h4>
+                                <p>Spray / Broadcast</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 w-25">
+                        <div class="feature-box">
+                            <div class="feature-box-content">
+                                <h4>Safest Agri drone of India</h4>
+                                <p>RADAR based Collision Avoidance and Terrain Following</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+
+
+
+        <!-- Value Proposition of Drone Section Start -->
+        <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+            <div class="container py-5">
+                <!-- Section Title -->
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">VALUE PROPOSITION OF DRONE</h5>
+                    </div>
+                </div>
+
+                <!-- Table Start -->
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-striped align-middle">
+                        <thead class="table-primary">
+                            <tr>
+                                <th class="text-center">Sr.</th>
+                                <th class="text-center">Subject</th>
+                                <th class="text-center">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><i class="fa-solid fa-spray-can text-success me-2"></i>Effectiveness</td>
+                                <td>On crops like sugarcane and paddy, the effectiveness is unmatched. Once sugarcane exceeds 7 feet in height, only drones can spray effectively. In paddy fields, drones are the best way to spray without damaging the crop. One drone can spray up to 25 acres in a day.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><i class="fa-solid fa-seedling text-info me-2"></i>Future</td>
+                                <td>With the rise of nano fertilizers and ultra-low-volume (ULV) chemicals, drones are becoming the most effective solution for these advanced agricultural needs.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><i class="fa-solid fa-chart-line text-warning me-2"></i>Opportunity</td>
+                                <td>After fulfilling personal requirements, a customer can become an agri-entrepreneur or village-level entrepreneur. By providing drone spray services in nearby areas, they can earn up to Rs. 12,000 per day during the spray season.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Table End -->
+            </div>
+        </div>
+        <!-- Value Proposition of Drone Section End -->
+
+
+
+        <!-- USP of Agribot Section Start -->
+        <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+            <div class="container py-5">
+                <!-- Section Title -->
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">USP OF AGRIBOT</h5>
+                    </div>
+                </div>
+
+                <!-- Responsive Table Start -->
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-striped align-middle">
+                        <thead class="table-primary">
+                            <tr>
+                                <th class="text-center">Sr.</th>
+                                <th class="text-center">Features</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><i class="fa-solid fa-remote text-primary me-2"></i>GCS (Ground Control Station-Remote): Integrated 7-inch touch display, no smartphone needed for the drone.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><i class="fa-solid fa-battery-full text-success me-2"></i>Li-Ion Batteries: World's best Li-ion batteries with up to 500 charging cycles.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><i class="fa-solid fa-shield-alt text-danger me-2"></i>Essential Safety Features: RADAR-based obstacle detection, terrain following, and smart battery failsafe.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><i class="fa-solid fa-network-wired text-warning me-2"></i>Fleet Management: Monitor drone utilization and output via a computer dashboard.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><i class="fa-solid fa-motorcycle text-info me-2"></i>Transportation: Easily carried on a bike or in a backpack.</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><i class="fa-solid fa-hand-holding-usd text-success me-2"></i>Assistance: Help with loan applications under AIF, UIN, insurance, and pilot certification.</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><i class="fa-solid fa-wrench text-secondary me-2"></i>Sales & Service Network: Available across India.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Responsive Table End -->
+            </div>
+        </div>
+        <!-- USP of Agribot Section End -->
+
+        
+
+        <!-- AIF Stakeholders Section Start -->
+        <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+            <div class="container py-5">
+                <!-- Main Card with Title and Icon -->
+                <div class="text-center mb-4">
+                    <div class="p-4 bg-white shadow-sm rounded">
+                        <img src="public/enviro/enviro.png" class="img-fluid mb-3" alt="Services Icon" style="max-width: 120px;">
+                        <h3 class="mb-0 fw-bold">Multiple Types of Stakeholders Eligible Under AIF</h3>
+                    </div>
+                </div>
+
+                <!-- Hexagon Icons Section -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <div class="bg-white p-3 rounded-3 shadow-sm hexagon-icon">
+                            <img src="public/enviro/a-6.png" alt="Icon 1" class="img-fluid">
+                        </div>
+                        <p class="mt-2 fw-bold">Farmers</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <div class="bg-white p-3 rounded-3 shadow-sm hexagon-icon">
+                            <img src="public/enviro/a-7.png" alt="Icon 2" class="img-fluid">
+                        </div>
+                        <p class="mt-2 fw-bold">Farmer Groups</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <div class="bg-white p-3 rounded-3 shadow-sm hexagon-icon">
+                            <img src="public/enviro/a-8.png" alt="Icon 3" class="img-fluid">
+                        </div>
+                        <p class="mt-2 fw-bold">Agri Entrepreneurs</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <div class="bg-white p-3 rounded-3 shadow-sm hexagon-icon">
+                            <img src="public/enviro/a-9.png" alt="Icon 4" class="img-fluid">
+                        </div>
+                        <p class="mt-2 fw-bold">Large Businesses</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <div class="bg-white p-3 rounded-3 shadow-sm hexagon-icon">
+                            <img src="public/enviro/a-10.png" alt="Icon 5" class="img-fluid">
+                        </div>
+                        <p class="mt-2 fw-bold">State Agencies</p>
+                    </div>
+                </div>
+
+                <!-- Divider Line -->
+                <hr class="my-4" />
+
+                <!-- Description Section -->
+                <div class="row">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-md-4 col-lg-2" style="width: 20%;">
+                        <div class="bg-white p-4 rounded shadow-sm text-center">
+                            <h6 class="fw-bold">Farmers</h6>
+                            <p>Individual farmers</p>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="col-12 col-md-4 col-lg-2" style="width: 20%;">
+                        <div class="bg-white p-4 rounded shadow-sm text-center">
+                            <h6 class="fw-bold">Farmer Groups</h6>
+                            <p>Farmer Producer Organisations, Joint Liability Groups, Self Help Groups, Primary Agricultural Coop Societies</p>
+                        </div>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="col-12 col-md-4 col-lg-2" style="width: 20%;">
+                        <div class="bg-white p-4 rounded shadow-sm text-center">
+                            <h6 class="fw-bold">Agri Entrepreneurs</h6>
+                            <p>Individual business owners such as millers, exporters, food processors, traders, and storage providers.</p>
+                        </div>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="col-12 col-md-4 col-lg-2" style="width: 20%;">
+                        <div class="bg-white p-4 rounded shadow-sm text-center">
+                            <h6 class="fw-bold">Large Businesses</h6>
+                            <p>FMCG players, exporters, food processors, equipment manufacturers</p>
+                        </div>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="col-12 col-md-4 col-lg-2" style="width: 20%;">
+                        <div class="bg-white p-4 rounded shadow-sm text-center">
+                            <h6 class="fw-bold">State Agencies</h6>
+                            <p>APMCs, Federations of FPOs, SHGs, Cooperatives, State Warehousing Corporations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AIF Stakeholders Section End -->
+
+
+
+
+
+        <!-- AIF Portal Process Section -->
+        <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+            <div class="container py-5">
+                <!-- Section Title -->
+                <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
+                    <h1 class="display-5 mb-4">AIF Portal - Simple Online Application Process Setup for the Scheme</h1>
+                    <a class="mb-0 btn btn-primary" href="https://agriinfra.dac.gov.in/" target="_blank">Visit AIF Platform</a>
+                </div>
+                
+                <!-- Process Duration -->
+                <div class="text-center mb-5">
+                    <span class="process-duration">Max 60 days</span>
+                </div>
+
+                <!-- Step-by-Step Process -->
+                <div class="row step-container text-center">
+                    <!-- Step 1 -->
+                    <div class="col-md-2 step-box">
+                        <img src="public/enviro/b-1.png" alt="Step 1 Image" class="img-fluid mb-3">
+                        <p>Applicant registers on the online portal, fills application, and submits DPR</p>
+                    </div>
+                    
+                    <div class="col-md-1 arrow">
+                        <div class="arrow-icon">
+                            <img src="public/enviro/arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-md-2 step-box">
+                        <img src="public/enviro/b-2.png" alt="Step 2 Image" class="img-fluid mb-3">
+                        <p>AIF team verifies application and transfers to bank branch for appraisal</p>
+                    </div>
+
+                    <div class="col-md-1 arrow">
+                        <div class="arrow-icon">
+                            <img src="public/enviro/arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-md-2 step-box">
+                        <img src="public/enviro/b-3.png" alt="Step 3 Image" class="img-fluid mb-3">
+                        <p>Bank regularly checks AIF portal / coordinates with nodal officer to access submitted applications</p>
+                    </div>
+
+                    <div class="col-md-1 arrow">
+                        <div class="arrow-icon">
+                            <img src="public/enviro/arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-md-2 step-box">
+                        <img src="public/enviro/b-4.png" alt="Step 4 Image" class="img-fluid mb-3">
+                        <p>Application verified by bank, registered on CGTMSE & sanctioned; disbursements as per schedule</p>
+                    </div>
+
+                    <div class="col-md-1 arrow">
+                        <div class="arrow-icon">
+                            <img src="public/enviro/arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="col-md-2 step-box">
+                        <img src="public/enviro/b-5.png" alt="Step 5 Image" class="img-fluid mb-3">
+                        <p>Bank submits claim to MoA on a quarterly basis for interest subvention & credit guarantee fee</p>
+                    </div>
+
+                    <div class="col-md-1 arrow">
+                        <div class="arrow-icon">
+                            <img src="public/enviro/arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="col-md-2 step-box">
+                        <img src="public/enviro/b-6.png" alt="Step 6 Image" class="img-fluid mb-3">
+                        <p>GOI transfers interest subvention & credit guarantee fee to banks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Container for the section -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <!-- Required Credentials Section -->
+                <div class="row g-4 mb-5">
+                    <!-- Credentials Header Card -->
+                    <div class="col-lg-6">
+                        <div class="custom-card p-4 text-center rounded bg-light shadow-sm">
+                            <img src="public/enviro/enviro.png" class="custom-icon img-fluid mb-3" alt="Services Icon">
+                        </div>
+                        <div class="custom-card p-4 text-center rounded bg-light shadow-sm">
+                            <h3 class="custom-title">Existing Loan Details (If Any)</h3>
+                        </div>
+                        <!-- Loan Details List -->
+                        <div class="custom-card p-4 bg-white rounded shadow-sm">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Types of Facility - Cash Credit, Term Loan, and Others</li>
+                                <li class="list-group-item">Name of Bank and Branch</li>
+                                <li class="list-group-item">Limits</li>
+                                <li class="list-group-item">Rate of Interest</li>
+                                <li class="list-group-item">Repayment Terms</li>
+                                <li class="list-group-item">Purpose</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Credentials List -->
+                    <div class="col-lg-6">
+                        <h3 class="custom-title">Required Credentials for Data Verifications & DPR</h3>
+                        <div class="custom-card p-4 bg-white rounded shadow-sm">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Aadhar Card of 3 Directors</li>
+                                <li class="list-group-item">PAN Card of 3 Directors</li>
+                                <li class="list-group-item">PAN Number of Company</li>
+                                <li class="list-group-item">Registration Number of Applicant/CIN</li>
+                                <li class="list-group-item">Date of Establishment/Incorporation</li>
+                                <li class="list-group-item">Address of the Registered Office</li>
+                                <li class="list-group-item">Address of 3 Directors</li>
+                                <li class="list-group-item">Contact Number of 3 Directors</li>
+                                <li class="list-group-item">Email ID of 3 Directors</li>
+                                <li class="list-group-item">Academic & Technical Qualifications of 3 Directors</li>
+                                <li class="list-group-item">DIN Number of 3 Directors</li>
+                                <li class="list-group-item">Shareholding of 3 Directors</li>
+                                <li class="list-group-item">Cancelled Bank Check/Photocopy of the Passbook of Lending Bank</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        <!-- Container for the section -->
+        <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+            <div class="container py-5">
+                <div class="table-container">
+                    <!-- Section Title -->
+                    <h2 class="title text-center mb-4">Detailing of Proposal</h2>
+                    <p class="text-center mb-5">For Understanding Only</p>
+                    
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Sr</th>
+                                    <th scope="col">Topic</th>
+                                    <th scope="col">Explanation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td class="topic">Nano Fertiliser</td>
+                                    <td>
+                                        Urea and DAP are now coming in NANO form. Urea- Granular dose per acre was 45kg, DAP was 27kg.
+                                        Now in Nano-Urea and Nano-DAP dose is 500ml per acre.
+                                        Best results of Nano-Urea and Nano-DAP are observed by drone only.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td class="topic">Chemicals – ULV</td>
+                                    <td>
+                                        In India, it is observed that pests are building immunity against Generic molecules of insecticides. New formulations are required to control immune pests. These new formulations are now coming in ULV (Ultra-low volume form). Dose of ULV per acre would be as low as 50ml. In this case also, as drone sprays are very fine, the efficacy of ULV is observed best with drones. Most of the new chemicals being registered in India are ULVs and companies like Syngenta, Bayer are taking it with Drone as spraying method on “LABEL”.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td class="topic">Finance</td>
+                                    <td>
+                                        Most affordable and safe loan in India. No security required.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td class="topic">Govt Push</td>
+                                    <td>
+                                        Government is launching many schemes to promote drones. Reasons are simple:
+                                        <ul>
+                                            <li>When consumption of Nano-Urea and Nano-DAP increases, then Govt will save huge money, which is going in subsidy provided on UREA (about 2 lakh crore per year).</li>
+                                            <li>Soil protection can be ensured with drones as dose and spray are controlled scientifically.</li>
+                                            <li>As spray volume is controlled, so residue of chemical on crops is within permissible limits. This saves the health of consumers.</li>
+                                            <li>With the implementation of drones, there will be 90% savings in water being used for spray applications.</li>
+                                            <li>With advanced drone-based farm mechanization, farmers' resources will be saved and output, yield will increase.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <!-- Left Column: Library Information -->
+                    <div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
+                        <h1>Library</h1>
+                        <p class="lead">Link for videos and Photographs:</p>
+                        <div class="link-section">
+                            <a href="https://drive.google.com/drive/folders/1JX-cC51kcY6eZHf1DuyzoJxcd5DzYJfD?usp=sharing" target="_blank" class="btn btn-primary">Open Google Drive Folder</a>
+                        </div>
+                    </div>
+        
+                    <!-- Right Column: QR Code -->
+                    <div class="col-md-6 text-md-end text-center">
+                        <div class="qr-code">
+                            <img src="public/enviro/qr.png" class="img-fluid rounded" alt="QR Code">
+                        </div>
+                        <h4 class="mt-3">QR Code For Videos & Photographs</h4>
+                    </div>
+                </div>     
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info Mumbai</h4>
+                            <h4 class="text-secondary">(Headquarters)</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Block, 35, Below Balasaheab Thackeray Flyover, Near Habibia Masjid, Mumbai 400102</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> service@unisol.org.in</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +91 932 531 2125</a>
+                        </div>
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info Nagpur</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i>3th floor , F. No 2, Prince Complex, Aprt, Chatrapati Nagar, Nagpur, Maharashtra 440015</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> admin@unisol.org.in</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +91 749 901 3846 </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Our Services</h4>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                    <i class="fas fa-angle-right me-2"></i>
+                                    HealthCare
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                                  <li> <a href="medical-equip.html" class="dropdown-item">Medical Equipment</a></li>
+                                  <li><a href="screening.html" class="dropdown-item">Screening Devices</a></li>
+                                  <li><a href="infrastructure.html" class="dropdown-item">Hospital Infrastructure</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                    <i class="fas fa-angle-right me-2"></i>
+                                    Waste Management
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                                    <li><a href="waste-manag.html" class="dropdown-item">Solid Waste Management</a></li>
+                                    <li><a href="biomedical.html" class="dropdown-item">Biomedical Waste Management</a></li>
+                                    <li><a href="stp.html" class="dropdown-item">Sewage Treatment Plant</a></li>
+                                    <li><a href="etp.html" class="dropdown-item">Effluent Treatment Plant</a></li>
+                                    <li><a href="waste-water-manage.html" class="dropdown-item">Kitchen Waste Management</a></li>
+                                    <li><a href="clean-safe.html" class="dropdown-item">Clean Safe Water</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                    <i class="fas fa-angle-right me-2"></i>
+                                    Start-Up Projects
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                                  <li><a href="drone.html" class="dropdown-item">Agricultural Drone</a></li>
+                                  <li><a href="pallets.html" class="dropdown-item">Automation in Pharmacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Privacy Policy</h4>
+                            <div class="mb-1">
+                                <a href="404.html" class=""><i class="fas fa-angle-right me-2"></i> Terms Of Use</a>
+                            </div>
+                            <div class="mb-3">
+                                <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Technokrate</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://technokrate.com">Technokrate</a> Distributed By <a class="border-bottom text-white" href="https://technokrate.com">Technokrate LTD. PVT.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

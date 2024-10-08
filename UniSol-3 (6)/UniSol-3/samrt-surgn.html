@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>SurgiSol</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+        <!-- MDB CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <script src="https://kit.fontawesome.com/df4fa444c6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .logo-large{
+                width: 285px;
+                height: 65px;
+                transition: width 0.3s ease-in-out;
+            }
+            .logo-small{
+                width: 100%;
+                height: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #91DDCF;">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex">
+                        <a href="#" class="text-dark me-4"><i class="fas fa-envelope text-secondary me-2"></i>service@unisol.org.in</a>
+                        <a href="tel:+919325312125" class="text-dark me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+91 932 531 2125</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#" class="text-dark me-2"> Help</a><small> / </small>
+                        <a href="#" class="text-dark mx-2"> Support</a><small> / </small>
+                        <a href="#" class="text-dark ms-2"> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <div class="container-fluid nav-bar p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3 py-2">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="public/img/logo/surgisol.png" id="logo" class="img-fluid logo-large me-2" alt="UniSol Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active text-dark">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle text-dark">HealthCare</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="medical-equip.html" class="dropdown-item">Medical Equipment</a>
+                                <a href="screening.html" class="dropdown-item">Screening Devices</a>
+                                <a href="infrastructure.html" class="dropdown-item">Hospital Infrastructure</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle text-dark">Waste Management</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="waste-manag.html" class="dropdown-item">Solid Waste Management</a>
+                                <a href="biomedical.html" class="dropdown-item">Biomedical Waste Management</a>
+                                <a href="stp.html" class="dropdown-item">Sewage Treatment Plant</a>
+                                <a href="etp.html" class="dropdown-item">Effluent Treatment Plant</a>
+                                <a href="waste-water-manage.html" class="dropdown-item">Kitchen Waste Management</a>
+                                <a href="clean-safe.html" class="dropdown-item">Clean Safe Water</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle text-dark">Start-Up Projects</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="start-up.html" class="dropdown-item">Start-Up Health Group Projects</a>
+                                <a href="drone.html" class="dropdown-item">Agricultural Drone</a>
+                                <a href="pallets.html" class="dropdown-item">Automation in Pharmacy</a>
+                            </div>
+                        </div>
+                        <a href="inspiration.html" class="nav-item nav-link text-dark">Our Inspiration</a>
+                        <a href="contact.html" class="nav-item nav-link text-dark">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <script>
+            window.onscroll = function() {
+                var logo = document.getElementById("logo");
+                if (window.scrollY > 40) {
+                    logo.classList.add("logo-small");
+                } else {
+                    logo.classList.remove("logo-small");
+                }
+            };
+        </script>
+
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="appointmentModalLabel">Request Call</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="appointmentForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Smart-Surgn 4k</h1>
+                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-white">Medical Equipment</a></li>
+                    <li class="breadcrumb-item active text-secondary">Smart-Surgn</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Product-Slide Show -->
+        <section class="testimonial-section py-5">
+            <div class="container">
+                <h2 class="testimonial-title text-center mb-4">Product Brochure</h2>
+                <p class="testimonial-subtitle text-center mb-5">What our clients have to say about us</p>
+
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-image">
+                            <img src="public/docs/270 Product Flyer 2/270 Product Flyer 2-1.png" alt="Client 1 Image" style="background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-image">
+                            <img src="public/docs/270 Product Flyer 2/270 Product Flyer 2-2.png" alt="Client 2 Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">View PDF</h5>
+                    <a href="public/docs/270 Product Flyer 2.pdf" target="_blank" class="btn btn-primary">Download PDF</a>
+                </div>
+            </div>
+        </section>
+        <!-- Product-Slide Show -->
+
+        <script>
+            $(document).ready(function(){
+                $(".testimonial-carousel").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    margin: 30,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    nav: true,
+                    navText: [
+                        '<i class="fas fa-chevron-left"></i>',
+                        '<i class="fas fa-chevron-right"></i>'
+                    ],
+                    dots: false,
+                    animateIn: 'zoomIn',
+                    animateOut: 'zoomOut'
+                });
+            });
+        </script>
+
+        <!-- Video Start -->
+        <div class="container-fluid contact overflow-hidden py-5" style="background: url(public/bg-3.jpg); background-size: cover; background-attachment: initial; overflow: hidden; background-repeat: no-repeat; ">
+            <div class="container py-5">
+                <div class="row mb-5">
+                    <div class="col-lg-3 wow fadeInLeft justify-content-center" data-wow-delay="0.1s" style="width: 33%;">
+                        <div class="country-item position-relative">
+                            <video class="img-fluid w-100 rounded" style="cursor: pointer;" controls poster="public/img/video-poster.jpg">
+                                <source src="public/video-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="rounded p-4">
+                            <img src="public/equi-2.png" class="img-fluid w-100 rounded mb-3" alt="Smart Surgn">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 wow fadeInRight" data-wow-delay="0.3">
+                        <div class="rounded p-4">
+                            <h5 class="sub-title text-primary pe-3">Smart SurgN 4k</h5>
+                            <h1 class="display-5 mb-4">Highlight of the Product</h1>
+                            <ul class="list-unstyled ms-3 mb-4">
+                                <li class="mb-2"><i class="fa-solid fa-check-circle text-primary me-2"></i>Superior and reliable performance</li>
+                                <li class="mb-2"><i class="fa-solid fa-check-circle text-primary me-2"></i>Accurate color reproduction</li>
+                                <li class="mb-2"><i class="fa-solid fa-check-circle text-primary me-2"></i>Consistent performance</li>
+                            </ul>
+                            <h1 class="display-5 mb-4">Application Benefit</h1>
+                            <p class="mb-0">
+                                <span class="fw-bold">Delivers a truly immersive visualization experience:</span> The IR camera sensor allows for real-time overlay of ICG fluorescence over white-light images in 4K Ultra-HD resolution. It also displays the status of different functions on each device, such as insufflation, vacuum, laser, and video mode.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- P-Video Start -->
+        <div class="container-fluid country overflow-hidden py-5">
+            <div class="container">
+                <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">Smart SurgN</h5>
+                    </div>
+                    <h1 class="display-5 mb-4">Demo Videos</h1>
+                </div>
+                <div class="row g-4 text-center">
+                    <!-- Video 1 -->
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="country-item item-1 position-relative">
+                            <video class="img-fluid w-100 rounded" style="cursor: pointer;" controls poster="public/img/video-poster.jpg">
+                                <source src="public/video-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="col-lg-6 col-md-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="country-item item-2 position-relative">
+                            <video class="img-fluid w-100 rounded" style="cursor: pointer;" controls poster="public/img/video-poster.jpg">
+                                <source src="public/video-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="col-lg-6 col-md-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="country-item item-3 position-relative">
+                            <video class="img-fluid w-100 rounded" style="cursor: pointer;" controls poster="public/img/video-poster.jpg">
+                                <source src="public/video-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="col-lg-6 col-md-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="country-item position-relative">
+                            <video class="img-fluid w-100 rounded" style="cursor: pointer;" controls poster="public/img/video-poster.jpg">
+                                <source src="public/video-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- P-Video End -->
+
+        <!-- Dr. video Start -->
+        <div class="container-fluid contact overflow-hidden py-5" style="background: url(public/assets/img/stethoscope.jpg); background-size: cover; background-attachment: initial; overflow: hidden; background-repeat: no-repeat; ">
+            <div class="container py-5">
+                <div class="row mb-5">
+                    <div class="col-lg-3 wow fadeInLeft justify-content-center" data-wow-delay="0.1s" style="width: 33%;">
+                        <div class="country-item position-relative">
+                            <video class="img-fluid w-100 rounded" style="cursor: pointer;" controls poster="public/img/video-poster.jpg">
+                                <source src="public/video-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="rounded p-3">
+                            <img src="public/smart-3.png" class="img-fluid w-100 rounded" alt="Smart Surgn">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 wow fadeInRight" data-wow-delay="0.3">
+                        <h2 class="display-5 mb-4">Purpose-built for Superior and Reliable Performance</h2>
+                        <p class="lead mb-4 text-muted">All components seamlessly integrate to provide superb visibility, color reproduction, and reliable performance.</p>
+                        <div class="accordion" id="featureAccordion">
+                            <!-- 4prizMCurgN Camera Head -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h5 class="fw-bold mb-0"><i class="fa-solid text-success fa-0"></i> <i class="fa-solid fa-1 text-success"></i>    prizMCurgN Camera Head</h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#featureAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Camera head visualizes regular and fluorescence images in stunning 4K Ultra HD resolution. Easily access functions with a touch of a button.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ICG Laparoscope -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <h5 class="fw-bold mb-0"><i class="fa-solid text-success fa-0"></i> <i class="fa-solid fa-2 text-success"></i>    ICG Laparoscope</h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#featureAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Clearly examine organs in the abdomen with rigid laparoscopes in 0 and 30-degree field of view.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EyeRSurgN Camera Console -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <h5 class="fw-bold mb-0"><i class="fa-solid text-success fa-0"></i> <i class="fa-solid fa-3 text-success"></i>    EyeRSurgN Camera Console</h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#featureAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Make easy visual adjustments and customize camera button configuration on a 5-inch LCD touchscreen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- IRLightSurgN Light Source -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <h5 class="fw-bold mb-0"><i class="fa-solid text-success fa-0"></i> <i class="fa-solid fa-4 text-success"></i>    IRLightSurgN Light Source</h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#featureAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Clearly assess vessels, blood flow, and tissue perfusion with the integrated laser and long-life LED light source.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- View4SurgN Monitor -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <h5 class="fw-bold mb-0"><i class="fa-solid text-success fa-0"></i> <i class="fa-solid fa-5 text-success"></i>    View4SurgN Monitor</h5>
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#featureAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Stunning 4K resolution video with wide gamut colors on a 32-inch LCD display.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dr. video End -->
+
+        <!-- Clinical Data Start -->
+        <div class="container-fluid features overflow-hidden py-5" style="background: url(public/surgisolbanner.png); background-size: cover; background-attachment: initial; overflow: hidden; background-repeat: no-repeat;">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <div class="sub-style text-center">
+                            <h2 class=" text-primary px-3">Clinical Data</h2>
+                        </div>
+                        <p class="mb-0">Our clinical data show improvements in both safety and efficiency across all cases and procedures</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="counter-content text-center">
+                            <h3 class="mb-2 text-dark">Human Cases</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value display-4 text-dark" data-toggle="counter-up">400</span>
+                                <h4 class="text-dark mb-0 fs-2 ms-2">+</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="counter-content text-center">
+                            <h3 class="mb-2 text-dark">Surgeons</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value display-4 text-dark" data-toggle="counter-up">100</span>
+                                <h4 class="text-dark mb-0 fs-2 ms-2">+</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="sub-style text-center">
+                            <h2 class=" text-primary px-3">5 Countries</h2>
+                        </div>
+                        <p class="mb-0 text-center">USA, Israel, Spain, UAE, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Clinical Data End -->
+
+
+        <!-- Feature Section Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <h1 class="display-5 mb-4 text-center">Feature Benefits</h1>
+                <p class="mb-4 text-center">
+                    Maximize visual potential with four times more detail. Real-time fluorescence overlay in 4K resolution. Enjoy four stunning video modalities, including fluorescence imaging. Make quick video adjustments with intuitive controls.
+                </p>
+                <div class="row g-5 align-items-center">
+                    <!-- Left Column -->
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="rounded p-3">
+                            <img src="public/smart-1.png" class="img-fluid w-100 rounded" alt="Smart Surgn Image">
+                        </div>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="rounded p-3 mt-4">
+                            <img src="public/smart-2.png" class="img-fluid w-100 rounded" alt="Smart Surgn Feature Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature Section End -->
+
+
+        <!-- Visualization Start -->
+        <div class="container-fluid contact overflow-hidden py-5" style="background: url(public/bg-3.jpg); background-size: cover; background-attachment: initial; overflow: hidden; background-repeat: no-repeat; ">
+            <div class="container py-5">
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h3 class="display-4 mb-4">4K ICG VISUALIZATION SYSTEM</h3>
+                    <h5 class="text-primary mb-3">Unparalleled Clarity, Immersive Surgery</h5>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-3 wow fadeInLeft justify-content-center" data-wow-delay="0.1s" style="width: 33%;">
+                        <div class="rounded p-3">
+                            <img src="public/smart-6.png" class="img-fluid w-95 rounded" style="height: 280px;" alt="Smart Surgical System">
+                        </div>
+                        <div class="rounded p-3">
+                            <img src="public/smart-5.png" class="img-fluid w-100 rounded" alt="Smart Surgical System">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 wow fadeInRight" data-wow-delay="0.3">
+                        <div class="rounded p-4">
+                            <p class="lead mb-4">Designed to simplify complex workflow and offer more information during surgery, the SmartSurgN 4K ICG visualization system delivers a truly immersive visualization experience.</p>
+                            <p class="lead mb-4">The presence of a dedicated IR camera sensor allows for real-time overlay of ICG fluorescence over white-light images in 4K Ultra-HD resolution.</p>
+                        </div>
+                        <div class="rounded mt-4 p-4">
+                            <ul class="list-unstyled ms-3 mb-4">
+                                <li class="mb-2"><i class="fa-solid fa-check-circle text-primary me-2"></i>4K resolution video</li>
+                                <li class="mb-2"><i class="fa-solid fa-check-circle text-primary me-2"></i>Four Imaging Modalities</li>
+                                <li class="mb-2"><i class="fa-solid fa-check-circle text-primary me-2"></i>Three Video Color Modes</li>
+                                <li class="mb-2"><i class="fa-solid fa-check-circle text-primary me-2"></i>Integrated Laser & LED Light Source</li>
+                                <li class="mb-2"><i class="fa-solid fa-check-circle text-primary me-2"></i>Customizable Camera Buttons</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Visualization Start -->
+
+
+        <!-- Enhanced Section Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <!-- Full Width Section -->
+                    <div class="col-12 wow fadeInLeft" data-wow-delay="0.1s">
+                        <h5 class="text-center text-primary mb-3">Benefits</h5>
+                        <h2 class="display-5 mb-4 text-center">Maximize Visual Potential with Four Times More Detail</h2>
+                        <p class="mb-4 text-muted text-center">
+                            4 CMOS camera sensors deliver stunning video in 4K Ultra-HD (3840x2160) resolution. View vivid images with four times more visual information than full HD (1920x1080). The camera is capable of up to 2.3x optical zoom when attached to a zoom coupler.
+                        </p>
+                        <div class="mb-4">
+                            <div class="rounded p-3">
+                                <img src="public/smart-10.png" class="img-fluid w-100 rounded" style="height: 290px; object-fit: cover;" alt="High-Resolution Camera">
+                            </div>
+                        </div>
+                        <h5 class="text-center text-primary mb-3">Advanced Features</h5>
+                        <h2 class="display-5 text-center mb-4">See Beyond the Norm with Real-Time Fluorescence Overlay in 4K</h2>
+                        <p class="mb-4 text-center text-muted">
+                            The presence of a dedicated fourth sensor, capable of processing laser (IR) and visible light, renders real-time fluorescence overlay on RGB video in 4K Ultra-HD resolution.
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                                <div class="rounded p-3">
+                                    <img src="public/smart-11.png" class="img-fluid w-100 rounded" style="height: 250px; object-fit: cover;" alt="Real-Time Fluorescence Overlay">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                                <div class="rounded p-3">
+                                    <img src="public/smart-12.png" class="img-fluid w-100 rounded" style="height: 250px; object-fit: cover;" alt="Enhanced Camera Features">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Enhanced Section End -->
+
+
+        <!-- Equipment Show -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Left Column: Card with Table -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card text-white">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">Smart SurgN 4k</h2>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-striped table-borderless">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Sr.No.</th>
+                                                <th scope="col">Description Of Services</th>
+                                                <th scope="col">Quantity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Camera Head, CCU, Telescope 5mm 0 degree, Telescope 5 mm 30 degree, LED Light Source, 4K Monitor 31.5", 4K Monitor with standalone stand 40"</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Trolley</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Recording System</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>3 In Way Access System</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Tube Set</td>
+                                                <td>102</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>12 mm Access Port</td>
+                                                <td>72</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>8 mm Access Port</td>
+                                                <td>30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>Cautery System</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>Ligapro</td>
+                                                <td>30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>Ultima</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>Pencil</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>Patient Plate with Cable</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>15</td>
+                                                <td>Access Port 05mm</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>Access Port 12mm</td>
+                                                <td>40</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Images in Rows and Columns -->
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-md-12">
+                                <div class="bg-light rounded p-3">
+                                    <img src="public/smart-8.png" class="img-fluid w-100 rounded" alt="SurroundScope MIS Card">
+                                </div>
+                            </div>
+                            <!-- Add more images here if needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Equipment Show -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info Mumbai</h4>
+                            <h4 class="text-secondary">(Headquarters)</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Block, 35, Below Balasaheab Thackeray Flyover, Near Habibia Masjid, Mumbai 400102</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> service@unisol.org.in</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +91 932 531 2125</a>
+                        </div>
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info Nagpur</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i>3th floor , F. No 2, Prince Complex, Aprt, Chatrapati Nagar, Nagpur, Maharashtra 440015</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> admin@unisol.org.in</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +91 749 901 3846 </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Our Services</h4>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                    <i class="fas fa-angle-right me-2"></i>
+                                    HealthCare
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                                  <li> <a href="medical-equip.html" class="dropdown-item">Medical Equipment</a></li>
+                                  <li><a href="screening.html" class="dropdown-item">Screening Devices</a></li>
+                                  <li><a href="infrastructure.html" class="dropdown-item">Hospital Infrastructure</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                    <i class="fas fa-angle-right me-2"></i>
+                                    Waste Management
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                                    <li><a href="waste-manag.html" class="dropdown-item">Solid Waste Management</a></li>
+                                    <li><a href="biomedical.html" class="dropdown-item">Biomedical Waste Management</a></li>
+                                    <li><a href="stp.html" class="dropdown-item">Sewage Treatment Plant</a></li>
+                                    <li><a href="etp.html" class="dropdown-item">Effluent Treatment Plant</a></li>
+                                    <li><a href="waste-water-manage.html" class="dropdown-item">Kitchen Waste Management</a></li>
+                                    <li><a href="clean-safe.html" class="dropdown-item">Clean Safe Water</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                    <i class="fas fa-angle-right me-2"></i>
+                                    Start-Up Projects
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                                  <li><a href="drone.html" class="dropdown-item">Agricultural Drone</a></li>
+                                  <li><a href="pallets.html" class="dropdown-item">Automation in Pharmacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Privacy Policy</h4>
+                            <div class="mb-1">
+                                <a href="404.html" class=""><i class="fas fa-angle-right me-2"></i> Terms Of Use</a>
+                            </div>
+                            <div class="mb-3">
+                                <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Technokrate</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://technokrate.com">Technokrate</a> Distributed By <a class="border-bottom text-white" href="https://technokrate.com">Technokrate LTD. PVT.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Technokrate</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://technokrate.com">Technokrate</a> Distributed By <a class="border-bottom text-white" href="https://technokrate.com">Technorise Technokrate LTD. PVT.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

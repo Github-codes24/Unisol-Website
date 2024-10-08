@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Ignite</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <script src="https://kit.fontawesome.com/df4fa444c6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .logo-large{
+                width: 285px;
+                height: 65px;
+                transition: width 0.3s ease-in-out;
+            }
+            .logo-small{
+                width: 100%;
+                height: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #91DDCF;">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex">
+                        <a href="#" class="text-dark me-4"><i class="fas fa-envelope text-secondary me-2"></i>service@unisol.org.in</a>
+                        <a href="tel:+919325312125" class="text-dark me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+91 932 531 2125</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#" class="text-dark me-2"> Help</a><small> / </small>
+                        <a href="#" class="text-dark mx-2"> Support</a><small> / </small>
+                        <a href="#" class="text-dark ms-2"> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <div class="container-fluid nav-bar p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3 py-2">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="public/img/logo/ignite.png" id="logo" class="img-fluid logo-large me-2" alt="UniSol Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active text-dark">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle text-dark">HealthCare</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="medical-equip.html" class="dropdown-item">Medical Equipment</a>
+                                <a href="screening.html" class="dropdown-item">Screening Devices</a>
+                                <a href="infrastructure.html" class="dropdown-item">Hospital Infrastructure</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle text-dark">Waste Management</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="waste-manag.html" class="dropdown-item">Solid Waste Management</a>
+                                <a href="biomedical.html" class="dropdown-item">Biomedical Waste Management</a>
+                                <a href="stp.html" class="dropdown-item">Sewage Treatment Plant</a>
+                                <a href="etp.html" class="dropdown-item">Effluent Treatment Plant</a>
+                                <a href="waste-water-manage.html" class="dropdown-item">Kitchen Waste Management</a>
+                                <a href="clean-safe.html" class="dropdown-item">Clean Safe Water</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle text-dark">Start-Up Projects</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="start-up.html" class="dropdown-item">Start-Up Health Group Projects</a>
+                                <a href="drone.html" class="dropdown-item">Agricultural Drone</a>
+                                <a href="pallets.html" class="dropdown-item">Automation in Pharmacy</a>
+                            </div>
+                        </div>
+                        <a href="inspiration.html" class="nav-item nav-link text-dark">Our Inspiration</a>
+                        <a href="contact.html" class="nav-item nav-link text-dark">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <script>
+            window.onscroll = function() {
+                var logo = document.getElementById("logo");
+                if (window.scrollY > 40) {
+                    logo.classList.add("logo-small");
+                } else {
+                    logo.classList.remove("logo-small");
+                }
+            };
+        </script>
+
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="appointmentModalLabel">Request Appointment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="appointmentForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Pallets</h1>
+                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-secondary">Pallets</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        
+        
+        <!--Equipment Show-->
+
+
+        <div class="container-fluid py-5">
+            <div class="container border py-5">
+                <div class="row border">
+                    <!-- Left Column: Card with Table -->
+                    <div class="col-lg-6 wow fadeInLeft mt-4" data-wow-delay="0.1s">
+                        <div class="text-center">
+                            <h5 class="text-primary pe-3 fw-bold">Specification</h5>
+                        </div>
+                        <div class="ps-3 mt-4">
+                            <ul class="list-group list-group-flush ms-4">
+                                <li class="list-group-item border-0 mt-2 p-0"><i class="fa-brands fa-uikit"></i>  Pellet size: 25 mm</li>
+                                <li class="list-group-item border-0 mt-2 p-0"><i class="fa-brands fa-uikit"></i>  Output Capacity: 1.5 to 2 TPH/hour</li>
+                                <li class="list-group-item border-0 mt-2 p-0"><i class="fa-brands fa-uikit"></i>  Power: 60 HP with moter & panel board</li>
+                                <li class="list-group-item border-0 mt-2 p-0"><i class="fa-brands fa-uikit"></i>  Suitable for Power Plant Coal Dust.</li>
+                                <li class="list-group-item border-0 mt-2 p-0"><i class="fa-brands fa-uikit"></i>  Also useful For cotton Stalk, Soyabean stalk, Sawdust, Rice straw, bamboo, Agriculture waste.</li>
+                                <li class="list-group-item border-0 mt-2 p-0"><i class="fa-brands fa-uikit"></i>  Cost Effective due to less power </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Right Column: Images in Rows and Columns -->
+                    <div class="col-lg-6">
+                        <div class="sub-style mt-5 mb-2">
+                            <h5 class="text-primary text-center pe-3">Materials Used</h5>
+                        </div>
+                        <!-- First Row of Images -->
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="office-item p-4">
+                                    <div class="office-img mb-4">
+                                        <img src="public/materials/m-1.png" class="img-fluid w-100 rounded" alt="">
+                                        <label>Bamboo</label>
+                                    </div>
+                                    <div class="office-img mb-4">
+                                        <img src="public/materials/m-2.png" class="img-fluid w-100 rounded" alt="">
+                                        <label>Coconut Shell</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="office-item p-4">
+                                    <div class="office-img mb-4">
+                                        <img src="public/materials/m-3.png" class="img-fluid w-100 rounded" alt="">
+                                        <label>Cotton Stalk</label>
+                                    </div>
+                                    <div class="office-img mb-4">
+                                        <img src="public/materials/m-4.png" class="img-fluid w-100 rounded" alt="">
+                                        <label>Tender Coconut</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second Row of Images -->
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="office-item p-4">
+                                    <div class="office-img mb-4">
+                                        <img src="public/materials/m-5.png" class="img-fluid w-100 rounded" alt="">
+                                        <label>Tur Stalk</label>
+                                    </div>
+                                    <div class="office-img mb-4">
+                                        <img src="public/materials/m-6.png" class="img-fluid w-100 rounded" alt="">
+                                        <label>Agriculture Waste</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="office-item p-4">
+                                    <div class="office-img mb-4">
+                                        <img src="public/materials/m-7.png" class="img-fluid w-100 rounded" alt="">
+                                        <label>Saw Dust</label>
+                                    </div>
+                                    <div class="office-img mb-4">
+                                        <img src="public/materials/m-8.png" class="img-fluid w-100 rounded" alt="">
+                                        <label>Pellets</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!--Equipment Show-->
+
+        
+        <!-- Main Container -->
+        <div class="container-fluid service overflow-hidden pt-5">
+            <div class="container py-5">
+                <!-- Section Title -->
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary fw-bold">
+                        REVISED POLICY OF MINISTRY OF POWER FOR BIOMASS UTILIZATION FOR POWER GENERATION THROUGH CO-FIRING IN COAL BASED POWER PLANTS
+                    </h5>
+                </div>
+
+                <!-- Content Section -->
+                <div class="ps-3 mt-4">
+                    <!-- Numbered List -->
+                    <ul class="list-group list-group-numbered list-group-flush ms-4">
+                        <li class="list-group-item border-0 mt-2 p-0">
+                            <i class="fa-brands fa-uikit me-2 text-primary"></i>
+                            The current availability of biomass in India is estimated at about 750 million metric tonnes per year. The estimated surplus biomass availability is at about 230 million metric tonnes per annum covering agricultural residues.
+                        </li>
+                        <li class="list-group-item border-0 mt-2 p-0">
+                            <i class="fa-brands fa-uikit me-2 text-primary"></i>
+                            Ministry of Power (MOP) vide its policy dated 17-11-2017 on biomass utilization for power generation had advised that all fluidized bed and pulverized coal units (coal based thermal power plants) except those having ball and tube mill, of power generation utilities, public or private, located in India, to use 5-10% blend of biomass pellets made, primarily, of agro residue along with coal after assessing the technical feasibility, viz. safety aspect etc.
+                        </li>
+                        <li class="list-group-item border-0 mt-2 p-0">
+                            <i class="fa-brands fa-uikit me-2 text-primary"></i>
+                            In order to further promote use of biomass pellets in coal based thermal power plants, the above Policy is further modified. The modifications in the above Policy are as under:
+                            <ol type="I" class="mt-3">
+                                <li>
+                                    All coal based thermal power plants of power generation utilities with bowl mill, shall on annual basis mandatorily use 5 percent blend of biomass pellets made, primarily, of agro residue along with coal with effect from one year of the date of issue of this guideline. The obligation shall increase to 7 percent with effect from two years after the date of issue of this order and thereafter.
+                                </li>
+                                <li>
+                                    All coal based thermal power plants of power generation utilities with ball & race mill, shall on annual basis mandatorily use 5 % blend of biomass pellets (torrefied only) made, primarily, of agro residue along with coal. This is to be complied within one year starting from this order. Two years from the date of issue of this order and thereafter the obligation will increase to 7 percent.
+                                </li>
+                                <li>
+                                    All coal based thermal power plants of power generation utilities with ball & tube mills, shall on annual basis mandatorily use 5 % blend of torrefied biomass pellets with volatile content below 22%, primarily made of agro residue along with coal. This is to be complied within one year.
+                                </li>
+                                <li>
+                                    Generating Utilities having certain units under Reserve Shutdown or not being dispatched due to MOD (Merit Order Dispatch) consideration would ensure to increase the percentage of co-firing up to 10 % in their other operating units/ plants (5 % in plants having ball and tube mills).
+                                </li>
+                                <li>
+                                    Any power plants seeking exemptions / relaxation from co-firing may be considered on a case-by-case basis, based on recommendations of CEA.
+                                </li>
+                                <li>
+                                    The policy for co-firing of biomass would be in force for 25 years or till the useful life of the thermal power plant, whichever is earlier. The minimum percentage of biomass for co-firing will be reviewed from time to time.
+                                </li>
+                                <li>
+                                    The minimum contract period for procurement of biomass pellets by generating utilities shall be for 7 years to avoid delay in awarding contracts by generating companies every year and also to build up a long-term supply chain.
+                                </li>
+                                <li>
+                                    Provisions related to tariff determination and scheduling shall be as given below:
+                                    <ol type="a" class="mt-3">
+                                        <li>For projects set up under Section 62 of the Electricity Act 2003, the increase in cost due to co-firing of biomass pellets shall be passed through in Energy Charge Rate (ECR).</li>
+                                        <li>For projects set up under Section 63 of the Electricity Act 2003, the increase in ECR due to biomass co-firing can be claimed under Change in Law provisions.</li>
+                                        <li>Such additional impact on ECR shall not be considered in deciding Merit Order Dispatch (MOD) of the power plant.</li>
+                                        <li>Obligated Entities such as Discoms can meet their Renewable Purchase Obligations (RPO) by buying such generation of co-firing.</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+        <!--images-->
+        <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+            <div class="container py-5">
+                <div class="row">
+                    <!-- First Column: Image -->
+                    <div class="col-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <img src="public/enviro/t-1.png" class="img-fluid" alt=" ">
+                    </div>
+                    <!-- Second Column: Text -->
+                    <div class="col-6 text-center d-flex flex-column justify-content-center wow fadeInRight" data-wow-delay="0.1s">
+                        <div class="position-relative shadow-sm rounded">
+                            <div class="rounded overflow-hidden">
+                                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" class="img-fluid w-100 rounded" style="height: 300px; border: none;" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!--images-->
+
+        <!-- About Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="col">
+                    <div class="row wow fadeInUp" data-wow-delay="0.1">
+                        <div class="bg-light rounded p-3">
+                            <img src="public/enviro/t-2.png" class="img-fluid w-100 rounded" style="margin-bottom: 15px;" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info Mumbai</h4>
+                            <h4 class="text-secondary">(Headquarters)</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Block, 35, Below Balasaheab Thackeray Flyover, Near Habibia Masjid, Mumbai 400102</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> service@unisol.org.in</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +91 932 531 2125</a>
+                        </div>
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info Nagpur</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i>3th floor , F. No 2, Prince Complex, Aprt, Chatrapati Nagar, Nagpur, Maharashtra 440015</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> admin@unisol.org.in</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +91 749 901 3846 </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Our Services</h4>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                    <i class="fas fa-angle-right me-2"></i>
+                                    HealthCare
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                                  <li> <a href="medical-equip.html" class="dropdown-item">Medical Equipment</a></li>
+                                  <li><a href="screening.html" class="dropdown-item">Screening Devices</a></li>
+                                  <li><a href="infrastructure.html" class="dropdown-item">Hospital Infrastructure</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                    <i class="fas fa-angle-right me-2"></i>
+                                    Waste Management
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                                    <li><a href="waste-manag.html" class="dropdown-item">Solid Waste Management</a></li>
+                                    <li><a href="biomedical.html" class="dropdown-item">Biomedical Waste Management</a></li>
+                                    <li><a href="stp.html" class="dropdown-item">Sewage Treatment Plant</a></li>
+                                    <li><a href="etp.html" class="dropdown-item">Effluent Treatment Plant</a></li>
+                                    <li><a href="waste-water-manage.html" class="dropdown-item">Kitchen Waste Management</a></li>
+                                    <li><a href="clean-safe.html" class="dropdown-item">Clean Safe Water</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                    <i class="fas fa-angle-right me-2"></i>
+                                    Start-Up Projects
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                                  <li><a href="drone.html" class="dropdown-item">Agricultural Drone</a></li>
+                                  <li><a href="pallets.html" class="dropdown-item">Automation in Pharmacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Privacy Policy</h4>
+                            <div class="mb-1">
+                                <a href="404.html" class=""><i class="fas fa-angle-right me-2"></i> Terms Of Use</a>
+                            </div>
+                            <div class="mb-3">
+                                <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Technokrate</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://technokrate.com">Technokrate</a> Distributed By <a class="border-bottom text-white" href="https://technokrate.com">Technokrate LTD. PVT.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
