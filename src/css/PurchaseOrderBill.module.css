@@ -1,0 +1,24 @@
+#billTemplatePurchase{
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
+
+
+#billTemplatePurchase {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+#billHeader{
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+  text-align: center;
+}
+.secondRowContent{
+    font-family: Inter;
+    font-size: 13.92px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
