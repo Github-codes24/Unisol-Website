@@ -32,8 +32,12 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
         <style>
+            body{
+                background-color:rgb(249, 248, 236);
+                /* background-color: rgb(250, 236, 250); */
+            }
             .testimonial-section {
-                background-color: #f8f9fa;
+                /* background-color: #f8f9fa; */
             }
 
             .testimonial-title {
@@ -129,6 +133,59 @@
                 margin: 0;
                 padding: 20px;
             }
+            .three-section-container {
+    display: flex;
+    justify-content: space-between; /* Space between each section */
+    padding: 20px;
+    gap: 20px; /* Adds space between the sections */
+}
+
+.section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 30%; /* Each section takes 30% of the total width */
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px); /* Animates the section on hover */
+}
+
+.section-image {
+    width: 100%; /* Image takes up the full width of the container */
+    border-radius: 8px;
+    height: auto; 
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+.mid-continer{
+                width: 90%;
+            }
+            .new-muted{
+                color: rgb(54, 54, 54);
+                font-weight: 450;
+            }
+
+@media (max-width: 768px) {
+    .three-section-container {
+        flex-direction: column; /* Stack the sections vertically on smaller screens */
+        align-items: center;
+    }
+
+    .section {
+        width: 80%; /* Each section takes 80% of the width on small screens */
+        margin-bottom: 20px;
+    }
+}
+            
         </style>
     </head>
 
@@ -144,10 +201,10 @@
 
 
         <!-- Topbar Start -->
-        <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #91DDCF;">
+        <div class="container-fluid px-5 d-none d-lg-block" style="background-color:rgb(255, 254, 245);">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0" >
+                    <div class="d-flex" >
                         <a href="#" class="text-dark me-4"><i class="fas fa-envelope text-secondary me-2"></i>service@unisol.org.in</a>
                         <a href="tel:+919325312125" class="text-dark me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+91 932 531 2125</a>
                     </div>
@@ -164,10 +221,11 @@
         <!-- Topbar End -->
 
         <div class="container-fluid nav-bar p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3 py-2">
+            <nav class="navbar navbar-expand-lg navbar-dark px-3 py-2 bg-white">
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
-                    <img src="public/img/logo/unisol-logo.png" id="logo" class="img-fluid logo-large me-2" alt="UniSol Logo">
+                    <img src="public/img/logo/unisol-logo.png" id="logo" class="img-fluid logo-large me-2" alt="UniSol Logo" style="width: 170px; height: 90px;">
                 </a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars text-white"></span>
                 </button>
@@ -385,17 +443,17 @@
 
 
         <!-- About Start -->
-        <div class="container-fluid py-5">
+        <!-- <div class="container-fluid py-5">
             <div class="container">
-                <div class="row g-5">
+                <div class="row g-5"> -->
                     <!-- Left Column: Profile Section -->
-                    <div class="col-lg-5 mb-4 mb-lg-0 wow fadeInLeft" data-wow-delay="0.1s">
+                    <!-- <div class="col-lg-5 mb-4 mb-lg-0 wow fadeInLeft" data-wow-delay="0.1s">
                         <div class="rounded p-4">
                             <img src="public/home-1.webp" class="img-fluid w-100 rounded mb-3" alt="Vikram Khulsange">
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Right Column: Content Section -->
-                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+                    <!-- <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
                         <h1 class="mb-4 fw-bold text-center">Empowering Caregivers with Timely Delivery of Essential Healing Products</h1>
                         <p class="mb-4">
                             At the heart of our mission lies the commitment to deliver essential products to the healing hands that tirelessly work towards the well-being of others. Whether it's medical supplies, therapeutic tools, or wellness essentials, our goal is to ensure these vital items reach the dedicated professionals and caregivers who make a profound difference in people's lives. We understand the significance of timely, reliable deliveries in supporting those on the front lines of healthcare and wellness. With precision and care, we strive to facilitate seamless distribution, enabling practitioners to focus on what truly matters—delivering compassionate care and aiding in the process of healing.
@@ -403,8 +461,19 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- About End -->
+      <div class="container-fluid py-5">
+    <!-- About Us Section -->
+    <div class="container text-center">
+        <h1 class="display-5 mb-4">About Us</h1>
+        <p class="lead" style="font-size: 22px;">We are committed to making a positive impact on society by providing top-quality healthcare solutions and sustainable waste management services. Our mission is to create a healthier and greener future for all. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid labore quo itaque, recusandae quia unde tempore quas incidunt, temporibus natus animi quasi omnis nulla aliquam nihil pariatur saepe non accusantium doloribus totam molestiae, earum minima veniam voluptatem. Optio dolores tempora labore ducimus sint recusandae cum numquam. Ab aut illum nam!</p>
+    </div>
+
+   
+        </div>
+    </div>
+</div>
 
 
         <!-- Countries We Offer Start -->
@@ -414,45 +483,65 @@
                     <div class="sub-style">
                         <h5 class="sub-title text-primary px-3">SERVICES WE OFFER</h5>
                     </div>
-                    <h1 class="display-5 mb-4">How Timely Deliveries Empower Healthcare Heroes</h1>
-                    <p class="mb-0">See how our timely deliveries of essential supplies empower healthcare professionals to provide exceptional care. Watch the videos to discover how we support those on the frontlines of healing.</p>
+                    <!-- <h1 class="display-5 mb-4">How Timely Deliveries Empower Healthcare Heroes</h1>
+                    <p class="mb-0">See how our timely deliveries of essential supplies empower healthcare professionals to provide exceptional care. Watch the videos to discover how we support those on the frontlines of healing.</p> -->
                 </div>
-                <div class="row g-4 text-center">
+                <div class="three-section-container">
+                    <!-- Section 1 -->
+                    <div class="section">
+                        <img src="/healthcare1.jpg" alt="Section 1 Image" class="section-image"  style="height:300px;">
+                        <h3 class="section-title">Health Care</h3>
+                    </div>
+                
+                    <!-- Section 2 -->
+                    <div class="section">
+                        <img src="/waste managemnt.jpg" alt="Section 2 Image" class="section-image" style="height:300px;">
+                        <h3 class="section-title">Waste Management</h3>
+                    </div>
+                
+                    <!-- Section 3 -->
+                    <div class="section">
+                        <img src="/startup projects.jpg" alt="Section 3 Image" class="section-image"  style="height:300px;">
+                        <h3 class="section-title">Startup Projects</h3>
+                    </div>
+                </div>
+                
+                <!-- <div class="row g-4 text-center"> -->
                     <!-- Video 1 -->
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="country-item item-1 position-relative">
                             <div class="rounded overflow-hidden">
                                 <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" class="img-fluid w-100 rounded" style="height: 200px; border: none;" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Video 2 -->
-                    <div class="col-lg-6 col-md-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- <div class="col-lg-6 col-md-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="country-item item-2 position-relative">
                             <div class="rounded overflow-hidden">
                                 <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" class="img-fluid w-100 rounded" style="height: 200px; border: none;" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Video 3 -->
-                    <div class="col-lg-6 col-md-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
+                    <!-- <div class="col-lg-6 col-md-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="country-item item-3 position-relative">
                             <div class="rounded overflow-hidden">
                                 <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" class="img-fluid w-100 rounded" style="height: 200px; border: none;" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Video 4 -->
-                    <div class="col-lg-6 col-md-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
+                    <!-- <div class="col-lg-6 col-md-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="country-item position-relative">
                             <div class="rounded overflow-hidden">
                                 <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" class="img-fluid w-100 rounded" style="height: 200px; border: none;" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -465,7 +554,7 @@
             <div class="container py-5">
                 <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">OUR CLIENTS' REVIEWS</h5>
+                        <h5 class="sub-title text-primary px-3">Mission Or Vision</h5>
                     </div>
                     <h1 class="display-5 mb-4">What Our Clients Say</h1>
                     <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
@@ -635,86 +724,138 @@
         <!-- Counter Facts End -->
 
 
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Contact Info Mumbai</h4>
-                            <h4 class="text-secondary">(Headquarters)</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Block, 35, Below Balasaheab Thackeray Flyover, Near Habibia Masjid, Mumbai 400102</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> service@unisol.org.in</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +91 932 531 2125</a>
+       <!-- Footer Start -->
+       <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="mid-continer m-auto py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column mb-4">
+                        <h4 class="text-secondary mb-4">Headquarters</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> Block, 35, Below Balasaheab Thackeray Flyover, Near Habibia Masjid, Mumbai 400102</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> service@unisol.org.in</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> +91 932 531 2125</a>
+                    </div>
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Regional office</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i>3th floor , F. No 2, Prince Complex, Aprt, Chatrapati Nagar, Nagpur, Maharashtra 440015</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> admin@unisol.org.in</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> +91 749 901 3846 </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Our Services</h4>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                <i class="fas fa-angle-right me-2"></i>
+                                HealthCare
+                            </a>
+                            <ul class="dropdown-menu bg-dark" style="margin-left: 140px;" aria-labelledby="dropdownMenuLink">
+                              <li> <a href="medical-equip.html" class="dropdown-item">Medical Equipment</a></li>
+                              <li><a href="screening.html" class="dropdown-item">Screening Devices</a></li>
+                              <li><a href="infrastructure.html" class="dropdown-item">Hospital Infrastructure</a></li>
+                            </ul>
                         </div>
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Contact Info Nagpur</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i>3th floor , F. No 2, Prince Complex, Aprt, Chatrapati Nagar, Nagpur, Maharashtra 440015</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> admin@unisol.org.in</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +91 749 901 3846 </a>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                <i class="fas fa-angle-right me-2"></i>
+                                Waste Management
+                            </a>
+                            <ul class="dropdown-menu bg-dark" style="margin-left: 140px;" aria-labelledby="dropdownMenuLink">
+                                <li><a href="waste-manag.html" class="dropdown-item">Solid Waste Management</a></li>
+                                <li><a href="biomedical.html" class="dropdown-item">Biomedical Waste Management</a></li>
+                                <li><a href="stp.html" class="dropdown-item">Sewage Treatment Plant</a></li>
+                                <li><a href="etp.html" class="dropdown-item">Effluent Treatment Plant</a></li>
+                                <li><a href="waste-water-manage.html" class="dropdown-item">Kitchen Waste Management</a></li>
+                                <li><a href="clean-safe.html" class="dropdown-item">Clean Safe Water</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
+                                <i class="fas fa-angle-right me-2"></i>
+                                Start-Up Projects
+                            </a>
+                            <ul class="dropdown-menu bg-dark" style="margin-left: 140px;" aria-labelledby="dropdownMenuLink">
+                              <li><a href="drone.html" class="dropdown-item">Agricultural Drone</a></li>
+                              <li><a href="pallets.html" class="dropdown-item">Automation in Pharmacy</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Our Services</h4>
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
-                                    <i class="fas fa-angle-right me-2"></i>
-                                    HealthCare
-                                </a>
-                                <ul class="dropdown-menu bg-dark" style="margin-left: 140px;" aria-labelledby="dropdownMenuLink">
-                                  <li> <a href="medical-equip.html" class="dropdown-item">Medical Equipment</a></li>
-                                  <li><a href="screening.html" class="dropdown-item">Screening Devices</a></li>
-                                  <li><a href="infrastructure.html" class="dropdown-item">Hospital Infrastructure</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
-                                    <i class="fas fa-angle-right me-2"></i>
-                                    Waste Management
-                                </a>
-                                <ul class="dropdown-menu bg-dark" style="margin-left: 140px;" aria-labelledby="dropdownMenuLink">
-                                    <li><a href="waste-manag.html" class="dropdown-item">Solid Waste Management</a></li>
-                                    <li><a href="biomedical.html" class="dropdown-item">Biomedical Waste Management</a></li>
-                                    <li><a href="stp.html" class="dropdown-item">Sewage Treatment Plant</a></li>
-                                    <li><a href="etp.html" class="dropdown-item">Effluent Treatment Plant</a></li>
-                                    <li><a href="waste-water-manage.html" class="dropdown-item">Kitchen Waste Management</a></li>
-                                    <li><a href="clean-safe.html" class="dropdown-item">Clean Safe Water</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-expanded="false">
-                                    <i class="fas fa-angle-right me-2"></i>
-                                    Start-Up Projects
-                                </a>
-                                <ul class="dropdown-menu bg-dark" style="margin-left: 140px;" aria-labelledby="dropdownMenuLink">
-                                  <li><a href="drone.html" class="dropdown-item">Agricultural Drone</a></li>
-                                  <li><a href="pallets.html" class="dropdown-item">Automation in Pharmacy</a></li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Privacy Policy</h4>
+                        <div class="mb-1">
+                            <a href="404.html" class=""><i class="fas fa-angle-right me-2"></i> Terms Of Use</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Privacy Policy</h4>
-                            <div class="mb-1">
-                                <a href="404.html" class=""><i class="fas fa-angle-right me-2"></i> Terms Of Use</a>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <h4 class="text-secondary mb-4">Send Your Message</h4>
+                    <div class="col-lg-12 wow fadeInRight" data-wow-delay="0.3">
+                        
+                        <!-- <p class="mb-3">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="phone" class="form-control" id="phone" placeholder="Phone">
+                                        <label for="phone">Your Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6 ">
+                                    <div class="mb-3 bg-white rounded py-3">
+                                       
+                                        <div class="dropdown ">
+                                            <button class="border-0 bg-white  dropdown-toggle new-muted" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                 Select Services
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <li><a class="dropdown-item" href="./medical-equip.html">Health Care</a></li>
+                                                <li><a class="dropdown-item" href="./waste-manag.html">Waste Managment</a></li>
+                                                <li><a class="dropdown-item" href="./start-up.html">Start-Up-Projects</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3">Send Message</button>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="rounded p-4">
-                            <img src="public/contact-us.png" class="img-fluid w-100 mb-5" style="border-radius: 90px;" alt="Vikram Khulsange">
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
-
+    </div>
+    <!-- Footer End -->
         
         <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">
